@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Category(models.Model):
     """ category models """
     class Meta:
@@ -18,7 +19,8 @@ class Category(models.Model):
 class Product(models.Model):
     """ product model """
 
-    category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
+    category = models.ForeignKey(
+        'Category', null=True, blank=True, on_delete=models.SET_NULL)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=254)
     description = models.TextField()

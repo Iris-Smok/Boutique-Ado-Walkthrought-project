@@ -1,0 +1,3 @@
+user-agent: *
+Disallow: /accounts/
+Sitemap: https://boutique-ado-iris.herokuapp.com/sitemap.xml
